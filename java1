@@ -1,0 +1,407 @@
+public class java_code {
+				
+		/*private static int factorial(int n) {
+			
+			if(n!=0) {
+				n=n*factorial(n-1);
+				return n;
+			}
+			else {
+				return 1;
+			}
+		}*/
+
+		public static void main(String[] args) {
+			//TO CHECK FOR N ALPHABET
+			//
+	    	/*System.out.println("ENTER A CHARACTER TO BE CHECKED: ");
+	    	Scanner input = new Scanner(System.in);
+	    	int n = input.next().charAt(0);
+	    	
+	    		if(65<=n && n<=122) {
+	    			
+	    			System.out.println("CHARACTER IS AN ALPHABET!");
+	    		  }
+	    		
+	    		else {
+	    			System.out.println("CHARACTER IS NOT AN ALPHABET");
+	    		}*/
+			
+			//FACTORIAL
+			/*System.out.println("ENTER THE NO. WHOSE FACTORIAL IS TO BE CALCULATED: ");
+			Scanner input = new Scanner(System.in);
+	       
+			int n = input.nextInt();
+			int res = factorial(n);
+			System.out.println(res);*/
+			
+			//FIBONACCI SERIES
+			/*int n1 = 0, n2 = 1, n, sum;
+			System.out.println("Enter the no. of terms of fibonacci series: ");
+			Scanner input = new Scanner(System.in);
+			n = input.nextInt();
+			for(int i = 0; i < n; i++) {
+				sum = n1+n2;
+				System.out.println(n1);
+				n1=n2;
+				n2=sum;
+				
+			}*/
+			
+			//FIND HCF (it is important to initialize local variables
+			/*System.out.println("ENTER WHOSE HCF IS TO BE FOUND: ");
+			Scanner input = new Scanner(System.in);
+			int n = input.nextInt();
+			int j=1;
+			for(int i = 2; i<=n/2; i++) {
+				if(n%i==0) 
+					j = i;
+				
+			}
+			System.out.println(j);*/
+			
+			//LCM
+			/*System.out.println("ENTER THE TWO NOS FOR LCM: ");
+			Scanner input = new Scanner(System.in);
+			int n1 = input.nextInt();
+			int n2 = input.nextInt();
+			if(n2>n1 && n2!=n1) {
+				int j = 1;
+				for(int i =0; i<=n2/2; i++) {
+					if(n2%i==0)
+						j = i;
+				} 
+				System.out.println(j*n1);
+			}
+			else if(n1>n2 && n1!=n2) {
+				int x = 1;
+				for(int i =0; i<=n2/2; i++) {
+					if(n2%i==0)
+						x = i;
+				} 
+				System.out.println(x*n2);
+	    }*/
+			System.out.println("ENTER NOS WHOSE LCM IS TO BE FOUND: ");
+			Scanner input = new Scanner(System.in);
+			int n2 = input.nextInt();
+			int n1 = input.nextInt();
+			int j=1;
+			if(n2>n1) {
+			for(int i = 2; i<=n2/2; i++) {
+				if(n2%i==0) 
+					j = i;
+				
+			}
+			System.out.println(j*n1);
+			}
+			else {
+				for(int i = 2; i<=n1/2; i++) {
+					if(n1%i==0) 
+
+						j = i;
+					
+				}
+				System.out.println(j*n2);
+			}
+}
+}
+
+//sum using recursion		
+		private static int sum(int n){
+			if(n!=0) {
+				n=n+sum(n-1);
+				return n;
+			}
+			else {
+				return 0;
+			}
+		}
+
+//reverse string
+	    	System.out.println("ENTER A STRING TO BO REVERSED: ");
+	    	Scanner input = new Scanner(System.in);
+	    	String n = input.nextLine();
+	    	int l = n.length();
+	    	System.out.println(l);
+	    	for(int i = l-1; i>=0; i--) {
+	    		char g = n.charAt(i);
+	    		System.out.print(g);
+	    	}
+
+//largest no.
+	    	int num = array[0];
+	    	for(int i = 1; i<n ; i++) {
+	    		
+	    		if(array[i]>num) {
+	    			num = array[i];
+	    		}
+//NO. OF DIGITS IN A NO.	
+	    	}
+	    	System.out.println(num);
+int count = 0;
+	    	while(n!=0) {
+	    		n=n/10;
+	    		count++;
+	    	}
+	    	System.out.println(count);
+
+//REVERSE A NO.
+	    	Scanner input = new Scanner(System.in);
+	    	int COUNT = 0,n;
+	    	n = input.nextInt();
+	    	int m = n;
+	    	while(n!=0) {
+	    		n=n/10;
+	    		COUNT++;
+	    	}
+	    	//System.out.println(m);
+	    	int array[] = new int[COUNT];
+	    	for(int i = 0; i<COUNT;i++) {
+	    		
+	    		int j = m%10;
+	    		m=m/10;
+	    		array[i]=j;
+	    	}
+	    	for(int s = 0;s<COUNT;s++) {
+	    		System.out.print(array[s]);
+	    	}
+	    	
+//PALINDROME NO.
+package java101;
+
+import java.util.Scanner;
+
+
+public class java_code {
+		
+
+		public static void main(String[] args) {
+			//input array
+	    	System.out.println("ENTER THE NO.: ");
+	    	//REVERSE A NO.
+	    	Scanner input = new Scanner(System.in);
+	    	int COUNT = 0,n;
+	    	n = input.nextInt();
+	    	int m = n;
+	    	int s = n;
+	    	while(n!=0) {
+	    		n=n/10;
+	    		COUNT++;
+	    	}
+	    	System.out.println(m);
+	    	
+	    	int num = 0;
+	    	for(int i = 0; i<COUNT;i++) {
+	    		
+	    		int j = m%10;
+	    		num+= j*(Math.pow(10, COUNT-i-1));
+	    		m=m/10;
+	    		
+	    	}
+	    	
+	    	
+	    	
+	    	
+	    		System.out.println(num);
+	    		
+	    		if(s==num) {
+	    			System.out.println("NUMBER IS PALINDROME ");
+	    		}
+	    		else {
+	    			System.out.println("NUMBER IS NOT PALINDROME");
+	    		}
+	    
+}
+}
+//PRIME NO.
+	    	Scanner input = new Scanner(System.in);
+	    	int COUNT = 0,n;
+	    	n = input.nextInt();
+	    	for(int i = 2; i<=n/2; i++) {
+	    		if(n%i==0) {
+	    			COUNT++;
+	    		}
+	    	}
+	    	if(COUNT!=0) {
+    			System.out.println("NO. IS NOT PRIME");
+    			
+    		}
+    		else {
+    			System.out.println("NO. IS PRIME");
+    		}
+//PYRAMID
+		System.out.println("ENTER A NO.");
+		Scanner input = new Scanner(System.in);
+		int n = input.nextInt();
+		
+		for(int i = 0; i<n; i++ ) {
+			
+			for(int j = 2; j<= i+1; j++) {
+				System.out.print(" ");
+				
+			}
+			
+			for(int m = n-i; m>=1; m--) {
+				System.out.print("* ");
+			}
+			
+			for(int j = 2; j<= i+1; j++) {
+				System.out.print(" ");
+				
+			}
+			
+			for(int j = 2; j<= i+1; j++) {
+				System.out.print(" ");
+				
+			}
+			
+			for(int m = n-i; m>=1; m--) {
+				System.out.print("* ");
+			}
+			System.out.print("\n");
+			
+		}
+//
+//BINARY SEARCH
+import java.util.Scanner;
+import java.util.concurrent.TimeUnit;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
+
+public class java_code {
+		public int binarySearch(int arr[],int l,int n,int x) {
+			if(n>=l) {
+			int mid = l + (n-l)/2;
+			
+			if(arr[mid-1]==x)
+			return mid-1;
+			
+			if(arr[mid-1]>x)
+			return binarySearch(arr,0,mid-1,x);
+			if(arr[mid-1]<x)
+			return binarySearch(arr,mid+1,n,x);
+			}
+			return -1;
+}
+
+		public static void main(String[] args) throws InterruptedException {
+			
+			System.out.println("ENTER THE NO. OF TERMS:");
+			Scanner input = new Scanner(System.in);
+			int n = input.nextInt();
+			int arr[] = new int[n];
+			System.out.println("ENTER THE ELEMENTS:");
+			for(int i=0; i<n; i++) {
+				arr[i]=input.nextInt();
+			}
+			Arrays.sort(arr);
+			for(int j = 0; j<n;j++) {
+				System.out.println(arr[j]);
+			}
+			System.out.println("ENTER THE ELEMENT TO BE SEARCHED");
+			int x = input.nextInt();
+			long startTime = System.nanoTime();
+			java_code obj = new java_code();
+			int result = obj.binarySearch(arr, 0, n, x);
+			System.out.println("INDEX OF THE RESULT IS: "+result);
+			
+			
+
+			/* ... the code being measured starts ... */
+
+			// sleep for 5 seconds
+			TimeUnit.SECONDS.sleep(5);
+
+			/* ... the code being measured ends ... */
+
+			long endTime = System.nanoTime();
+
+			// get difference of two nanoTime values
+			long timeElapsed = endTime - startTime;
+
+			System.out.println("Execution time in nanoseconds  : " + timeElapsed);
+			System.out.println("Execution time in milliseconds : " +
+					timeElapsed / 1000000);
+		}
+}
+//SELECTION SORT
+public class java_code {
+		
+	public static void selectionSort(int array[],int n ) {
+		for(int j = 0; j<n-1; j++) {
+			int min_index = j;
+			
+			for(int k=j+1;k<n;k++) {
+				if(array[k]<array[min_index])
+					min_index=k;
+			}
+			int temp = array[min_index];
+			array[min_index]=array[j];
+			array[j]=temp;
+		}
+		for(int m =0;m<n;m++) {
+			System.out.print(array[m]+" ");
+		};
+	}
+	
+	
+		public static void main(String[] args){
+
+			
+			
+			System.out.println("Enter the no. of elements in the array");
+			Scanner input = new Scanner(System.in);
+			int n = input.nextInt();
+			System.out.println("Enter the elements in the array");
+			int array[] = new int[n];
+			for(int i = 0; i<n; i++ ) {
+				array[i]=input.nextInt();
+			}
+			selectionSort(array,n);
+			
+			}
+			
+		}
+//BUBBLE SORT
+public class java_code {
+		
+	public static void bubbleSort(int array[],int n ) {
+
+		for(int i =0;i<n-1;i++) {
+			for(int j=0;j<n-i-1;j++) {//instead of n-i-1 even n-1 will do
+				if(array[j]>array[j+1])
+				{
+					int temp = array[j];
+					array[j]=array[j+1];
+					array[j+1]=temp;
+				}
+				
+			}
+		}
+		
+		for(int m =0;m<n;m++) {
+			System.out.print(array[m]+" ");
+		};
+	}
+	
+	
+		public static void main(String[] args){
+
+			
+			
+			System.out.println("Enter the no. of elements in the array");
+			Scanner input = new Scanner(System.in);
+			int n = input.nextInt();
+			System.out.println("Enter the elements in the array");
+			int array[] = new int[n];
+			for(int i = 0; i<n; i++ ) {
+				array[i]=input.nextInt();
+			}
+			bubbleSort(array,n);
+			
+			}
+			
+		}
+
