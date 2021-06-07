@@ -1,0 +1,557 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2512
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fswiss\fcharset0 Helvetica-BoldOblique;\f2\fswiss\fcharset0 Helvetica-Oblique;
+}
+{\colortbl;\red255\green255\blue255;\red204\green108\blue29;\red217\green232\blue247;\red18\green144\blue195;
+\red249\green250\blue244;\red128\green128\blue128;\red30\green181\blue64;\red121\green171\blue255;\red230\green230\blue250;
+\red141\green218\blue248;\red167\green236\blue33;\red23\green198\blue163;\red242\green242\blue0;\red243\green236\blue121;
+\red104\green151\blue187;\red150\green236\blue63;\red0\green0\blue0;\red204\green129\blue186;\red204\green108\blue29;
+\red217\green232\blue247;\red18\green144\blue195;\red249\green250\blue244;\red30\green181\blue64;\red121\green171\blue255;
+\red230\green230\blue250;\red242\green242\blue0;\red104\green151\blue187;\red243\green236\blue121;\red141\green218\blue248;
+\red167\green236\blue33;\red23\green198\blue163;\red150\green236\blue63;\red128\green128\blue128;}
+{\*\expandedcolortbl;;\csgenericrgb\c80000\c42353\c11373;\csgenericrgb\c85098\c90980\c96863;\csgenericrgb\c7059\c56471\c76471;
+\csgenericrgb\c97647\c98039\c95686;\csgenericrgb\c50196\c50196\c50196;\csgenericrgb\c11765\c70980\c25098;\csgenericrgb\c47451\c67059\c100000;\csgenericrgb\c90196\c90196\c98039;
+\csgenericrgb\c55294\c85490\c97255;\csgenericrgb\c65490\c92549\c12941;\csgenericrgb\c9020\c77647\c63922;\csgenericrgb\c94902\c94902\c0;\csgenericrgb\c95294\c92549\c47451;
+\csgenericrgb\c40784\c59216\c73333;\csgenericrgb\c58824\c92549\c24706;\cssrgb\c0\c0\c0;\csgenericrgb\c80000\c50588\c72941;\csgenericrgb\c80000\c42353\c11373;
+\csgenericrgb\c85098\c90980\c96863;\csgenericrgb\c7059\c56471\c76471;\csgenericrgb\c97647\c98039\c95686;\csgenericrgb\c11765\c70980\c25098;\csgenericrgb\c47451\c67059\c100000;
+\csgenericrgb\c90196\c90196\c98039;\csgenericrgb\c94902\c94902\c0;\csgenericrgb\c40784\c59216\c73333;\csgenericrgb\c95294\c92549\c47451;\csgenericrgb\c55294\c85490\c97255;
+\csgenericrgb\c65490\c92549\c12941;\csgenericrgb\c9020\c77647\c63922;\csgenericrgb\c58824\c92549\c24706;\csgenericrgb\c50196\c50196\c50196;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs28 \cf2 public\cf3  \cf2 class\cf3  \cf4 java_code\cf3  \cf5 \{\cf0 \
+\cf3 				\cf0 \
+\cf3 		\cf6 /*private static \ul int\ulnone  factorial(\ul int\ulnone  n) \{\cf0 \
+\cf6 			\cf0 \
+\cf6 			if(n!=0) \{\cf0 \
+\cf6 				n=n*factorial(n-1);\cf0 \
+\cf6 				return n;\cf0 \
+\cf6 			\}\cf0 \
+\cf6 			else \{\cf0 \
+\cf6 				return 1;\cf0 \
+\cf6 			\}\cf0 \
+\cf6 		\}*/\cf0 \
+\
+\cf3 		\cf2 public\cf3  \cf2 static\cf3  \cf2 void\cf3  \cf7 main\cf5 (\cf4 String\cf5 []\cf3  \cf8 args\cf5 )\cf3  \cf5 \{\cf0 \
+\cf3 			\cf6 //TO CHECK FOR N ALPHABET\cf0 \
+\cf3 			\cf6 //\cf0 \
+\cf3 	    	\cf6 /*System.out.println("ENTER A CHARACTER TO BE CHECKED: ");\cf0 \
+\cf6 	    	Scanner input = new Scanner(System.in);\cf0 \
+\cf6 	    	\ul int\ulnone  n = input.next().charAt(0);\cf0 \
+\cf6 	    	\cf0 \
+\cf6 	    		if(65<=n && n<=122) \{\cf0 \
+\cf6 	    			\cf0 \
+\cf6 	    			System.out.println("CHARACTER IS AN ALPHABET!");\cf0 \
+\cf6 	    		  \}\cf0 \
+\cf6 	    		\cf0 \
+\cf6 	    		else \{\cf0 \
+\cf6 	    			System.out.println("CHARACTER IS NOT AN ALPHABET");\cf0 \
+\cf6 	    		\}*/\cf0 \
+\cf3 			\cf0 \
+\cf3 			\cf6 //FACTORIAL\cf0 \
+\cf3 			\cf6 /*System.out.println("ENTER THE NO. WHOSE FACTORIAL IS TO BE CALCULATED: ");\cf0 \
+\cf6 			Scanner input = new Scanner(System.in);\cf0 \
+\cf6 	       \cf0 \
+\cf6 			\ul int\ulnone  n = input.nextInt();\cf0 \
+\cf6 			\ul int\ulnone  res = factorial(n);\cf0 \
+\cf6 			System.out.println(res);*/\cf0 \
+\cf3 			\cf0 \
+\cf3 			\cf6 //FIBONACCI SERIES\cf0 \
+\cf3 			\cf6 /*\ul int\ulnone  n1 = 0, n2 = 1, n, sum;\cf0 \
+\cf6 			System.out.println("Enter the no. of terms of \ul fibonacci\ulnone  series: ");\cf0 \
+\cf6 			Scanner input = new Scanner(System.in);\cf0 \
+\cf6 			n = input.nextInt();\cf0 \
+\cf6 			for(\ul int\ulnone  i = 0; i < n; i++) \{\cf0 \
+\cf6 				sum = n1+n2;\cf0 \
+\cf6 				System.out.println(n1);\cf0 \
+\cf6 				n1=n2;\cf0 \
+\cf6 				n2=sum;\cf0 \
+\cf6 				\cf0 \
+\cf6 			\}*/\cf0 \
+\cf3 			\cf0 \
+\cf3 			\cf6 //FIND HCF (it is important to initialize local variables\cf0 \
+\cf3 			\cf6 /*System.out.println("ENTER WHOSE HCF IS TO BE FOUND: ");\cf0 \
+\cf6 			Scanner input = new Scanner(System.in);\cf0 \
+\cf6 			\ul int\ulnone  n = input.nextInt();\cf0 \
+\cf6 			\ul int\ulnone  j=1;\cf0 \
+\cf6 			for(\ul int\ulnone  i = 2; i<=n/2; i++) \{\cf0 \
+\cf6 				if(n%i==0) \cf0 \
+\cf6 					j = i;\cf0 \
+\cf6 				\cf0 \
+\cf6 			\}\cf0 \
+\cf6 			System.out.println(j);*/\cf0 \
+\cf3 			\cf0 \
+\cf3 			\cf6 //LCM\cf0 \
+\cf3 			\cf6 /*System.out.println("ENTER THE TWO NOS FOR LCM: ");\cf0 \
+\cf6 			Scanner input = new Scanner(System.in);\cf0 \
+\cf6 			\ul int\ulnone  n1 = input.nextInt();\cf0 \
+\cf6 			\ul int\ulnone  n2 = input.nextInt();\cf0 \
+\cf6 			if(n2>n1 && n2!=n1) \{\cf0 \
+\cf6 				\ul int\ulnone  j = 1;\cf0 \
+\cf6 				for(\ul int\ulnone  i =0; i<=n2/2; i++) \{\cf0 \
+\cf6 					if(n2%i==0)\cf0 \
+\cf6 						j = i;\cf0 \
+\cf6 				\} \cf0 \
+\cf6 				System.out.println(j*n1);\cf0 \
+\cf6 			\}\cf0 \
+\cf6 			else if(n1>n2 && n1!=n2) \{\cf0 \
+\cf6 				\ul int\ulnone  x = 1;\cf0 \
+\cf6 				for(\ul int\ulnone  i =0; i<=n2/2; i++) \{\cf0 \
+\cf6 					if(n2%i==0)\cf0 \
+\cf6 						x = i;\cf0 \
+\cf6 				\} \cf0 \
+\cf6 				System.out.println(x*n2);\cf0 \
+\cf6 	    \}*/\cf0 \
+\cf3 			\cf4 System\cf9 .
+\f1\i\b \cf10 out
+\f0\i0\b0 \cf9 .\cf11 println\cf5 (\cf12 "ENTER NOS WHOSE LCM IS TO BE FOUND: "\cf5 )\cf9 ;\cf0 \
+\cf3 			\cf4 Scanner\cf3  \cf13 \ul \ulc13 input\cf3 \ulnone  \cf9 =\cf3  \cf2 new\cf3  \cf11 Scanner\cf5 (\cf4 System\cf9 .
+\f1\i\b \cf10 in
+\f0\i0\b0 \cf5 )\cf9 ;\cf0 \
+\cf3 			\cf2 int\cf3  \cf13 n2\cf3  \cf9 =\cf3  \cf14 input\cf9 .\cf11 nextInt\cf5 ()\cf9 ;\cf0 \
+\cf3 			\cf2 int\cf3  \cf13 n1\cf3  \cf9 =\cf3  \cf14 input\cf9 .\cf11 nextInt\cf5 ()\cf9 ;\cf0 \
+\cf3 			\cf2 int\cf3  \cf13 j\cf9 =\cf15 1\cf9 ;\cf0 \
+\cf3 			\cf2 if\cf5 (\cf14 n2\cf9 >\cf14 n1\cf5 )\cf3  \cf5 \{\cf0 \
+\cf3 			\cf2 for\cf5 (\cf2 int\cf3  \cf13 i\cf3  \cf9 =\cf3  \cf15 2\cf9 ;\cf3  \cf14 i\cf9 <=\cf14 n2\cf9 /\cf15 2\cf9 ;\cf3  \cf14 i\cf9 ++\cf5 )\cf3  \cf5 \{\cf0 \
+\cf3 				\cf2 if\cf5 (\cf14 n2\cf9 %\cf14 i\cf9 ==\cf15 0\cf5 )\cf3  \cf0 \
+\cf3 					\cf14 j\cf3  \cf9 =\cf3  \cf14 i\cf9 ;\cf0 \
+\cf3 				\cf0 \
+\cf3 			\cf5 \}\cf0 \
+\cf3 			\cf4 System\cf9 .
+\f1\i\b \cf10 out
+\f0\i0\b0 \cf9 .\cf11 println\cf5 (\cf14 j\cf9 *\cf14 n1\cf5 )\cf9 ;\cf0 \
+\cf3 			\cf5 \}\cf0 \
+\cf3 			\cf2 else\cf3  \cf5 \{\cf0 \
+\cf3 				\cf2 for\cf5 (\cf2 int\cf3  \cf13 i\cf3  \cf9 =\cf3  \cf15 2\cf9 ;\cf3  \cf14 i\cf9 <=\cf14 n1\cf9 /\cf15 2\cf9 ;\cf3  \cf14 i\cf9 ++\cf5 )\cf3  \cf5 \{\cf0 \
+\cf3 					\cf2 if\cf5 (\cf14 n1\cf9 %\cf14 i\cf9 ==\cf15 0\cf5 )\cf3  \
+\cf0 \
+\cf3 						\cf14 j\cf3  \cf9 =\cf3  \cf14 i\cf9 ;\cf0 \
+\cf3 					\cf0 \
+\cf3 				\cf5 \}\cf0 \
+\cf3 				\cf4 System\cf9 .
+\f1\i\b \cf10 out
+\f0\i0\b0 \cf9 .\cf11 println\cf5 (\cf14 j\cf9 *\cf14 n2\cf5 )\cf9 ;\cf0 \
+\cf3 			\cf5 \}\
+\}\
+\}\
+\
+\pard\pardeftab720\partightenfactor0
+\cf6 //sum using recursion		\cf0 \
+\pard\pardeftab720\partightenfactor0
+\cf3 		\cf2 private\cf3  \cf2 static\cf3  \cf2 int\cf3  \cf7 \ul \ulc7 sum\cf5 \ulc5 (\cf2 \ulc2 int\cf3 \ulc3  \cf8 \ulc8 n\cf5 \ulc5 )\ulnone \{\cf0 \
+\pard\pardeftab720\partightenfactor0
+\cf3 			\cf2 if\cf5 (\cf8 n\cf9 !=\cf15 0\cf5 )\cf3  \cf5 \{\cf0 \
+\cf3 				\cf8 n\cf9 =\cf8 n\cf9 +
+\f2\i \cf16 sum
+\f0\i0 \cf5 (\cf8 n\cf9 -\cf15 1\cf5 )\cf9 ;\cf0 \
+\cf3 				\cf2 return\cf3  \cf8 n\cf9 ;\cf0 \
+\cf3 			\cf5 \}\cf0 \
+\cf3 			\cf2 else\cf3  \cf5 \{\cf0 \
+\cf3 				\cf2 return\cf3  \cf15 0\cf9 ;\cf0 \
+\cf3 			\cf5 \}\cf0 \
+\cf3 		\cf5 \}\
+\
+\pard\pardeftab720\partightenfactor0
+\cf6 //reverse string\cf0 \
+\pard\pardeftab720\partightenfactor0
+\cf3 	    	\cf4 System\cf9 .
+\f1\i\b \cf10 out
+\f0\i0\b0 \cf9 .\cf11 println\cf5 (\cf12 "ENTER A STRING TO BO REVERSED: "\cf5 )\cf9 ;\cf0 \
+\cf3 	    	\cf4 Scanner\cf3  \cf13 \ul \ulc13 input\cf3 \ulnone  \cf9 =\cf3  \cf2 new\cf3  \cf11 Scanner\cf5 (\cf4 System\cf9 .
+\f1\i\b \cf10 in
+\f0\i0\b0 \cf5 )\cf9 ;\cf0 \
+\pard\pardeftab720\partightenfactor0
+\cf3 	    	\cf4 String\cf3  \cf13 n\cf3  \cf9 =\cf3  \cf14 input\cf9 .\cf11 nextLine\cf5 ()\cf9 ;\cf0 \
+\cf3 	    	\cf2 int\cf3  \cf13 l\cf3  \cf9 =\cf3  \cf14 n\cf9 .\cf11 length\cf5 ()\cf9 ;\cf0 \
+\cf3 	    	\cf4 System\cf9 .
+\f1\i\b \cf10 out
+\f0\i0\b0 \cf9 .\cf11 println\cf5 (\cf14 l\cf5 )\cf9 ;\cf0 \
+\cf3 	    	\cf2 for\cf5 (\cf2 int\cf3  \cf13 i\cf3  \cf9 =\cf3  \cf14 l\cf9 -\cf15 1\cf9 ;\cf3  \cf14 i\cf9 >=\cf15 0\cf9 ;\cf3  \cf14 i\cf9 --\cf5 )\cf3  \cf5 \{\cf0 \
+\cf3 	    		\cf2 char\cf3  \cf13 g\cf3  \cf9 =\cf3  \cf14 n\cf9 .\cf11 charAt\cf5 (\cf14 i\cf5 )\cf9 ;\cf0 \
+\cf3 	    		\cf4 System\cf9 .
+\f1\i\b \cf10 out
+\f0\i0\b0 \cf9 .\cf11 print\cf5 (\cf14 g\cf5 )\cf9 ;\cf0 \
+\cf3 	    	\cf5 \}\
+\
+\pard\pardeftab720\partightenfactor0
+\cf6 //largest no.\cf0 \
+\pard\pardeftab720\partightenfactor0
+\cf3 	    	\cf2 int\cf3  \cf13 num\cf3  \cf9 =\cf3  \cf14 array\cf5 [\cf15 0\cf5 ]\cf9 ;\cf0 \
+\cf3 	    	\cf2 for\cf5 (\cf2 int\cf3  \cf13 i\cf3  \cf9 =\cf3  \cf15 1\cf9 ;\cf3  \cf14 i\cf9 <\cf14 n\cf3  \cf9 ;\cf3  \cf14 i\cf9 ++\cf5 )\cf3  \cf5 \{\cf0 \
+\cf3 	    		\cf0 \
+\cf3 	    		\cf2 if\cf5 (\cf14 array\cf5 [\cf14 i\cf5 ]\cf9 >\cf14 num\cf5 )\cf3  \cf5 \{\cf0 \
+\cf3 	    			\cf14 num\cf3  \cf9 =\cf3  \cf14 array\cf5 [\cf14 i\cf5 ]\cf9 ;\cf0 \
+\cf3 	    		\cf5 \}\cf0 \
+//NO. OF DIGITS IN A NO.\cf3 	\cf0 \
+\cf3 	    	\cf5 \}\cf0 \
+\cf3 	    	\cf4 System\cf9 .
+\f1\i\b \cf10 out
+\f0\i0\b0 \cf9 .\cf11 println\cf5 (\cf14 num\cf5 )\cf9 ;\
+\cf2 int\cf3  \cf13 count\cf3  \cf9 =\cf3  \cf15 0\cf9 ;\cf0 \
+\cf3 	    	\cf2 while\cf5 (\cf14 n\cf9 !=\cf15 0\cf5 )\cf3  \cf5 \{\cf0 \
+\cf3 	    		\cf14 n\cf9 =\cf14 n\cf9 /\cf15 10\cf9 ;\cf0 \
+\cf3 	    		\cf14 count\cf9 ++;\cf0 \
+\cf3 	    	\cf5 \}\cf0 \
+\cf3 	    	\cf4 System\cf9 .
+\f1\i\b \cf10 out
+\f0\i0\b0 \cf9 .\cf11 println\cf5 (\cf14 count\cf5 )\cf9 ;\
+\
+\pard\pardeftab720\partightenfactor0
+\cf6 //REVERSE A NO.\cf0 \
+\pard\pardeftab720\partightenfactor0
+\cf3 	    	\cf4 Scanner\cf3  \cf13 \ul input\cf3 \ulnone  \cf9 =\cf3  \cf2 new\cf3  \cf11 Scanner\cf5 (\cf4 System\cf9 .
+\f1\i\b \cf10 in
+\f0\i0\b0 \cf5 )\cf9 ;\cf0 \
+\cf3 	    	\cf2 int\cf3  \cf13 COUNT\cf3  \cf9 =\cf3  \cf15 0\cf9 ,\cf13 n\cf9 ;\cf0 \
+\cf3 	    	\cf14 n\cf3  \cf9 =\cf3  \cf14 input\cf9 .\cf11 nextInt\cf5 ()\cf9 ;\cf0 \
+\cf3 	    	\cf2 int\cf3  \cf13 m\cf3  \cf9 =\cf3  \cf14 n\cf9 ;\cf0 \
+\cf3 	    	\cf2 while\cf5 (\cf14 n\cf9 !=\cf15 0\cf5 )\cf3  \cf5 \{\cf0 \
+\cf3 	    		\cf14 n\cf9 =\cf14 n\cf9 /\cf15 10\cf9 ;\cf0 \
+\cf3 	    		\cf14 COUNT\cf9 ++;\cf0 \
+\cf3 	    	\cf5 \}\cf0 \
+\cf3 	    	\cf6 //System.out.println(m);\cf0 \
+\cf3 	    	\cf2 int\cf3  \cf13 array\cf5 []\cf3  \cf9 =\cf3  \cf2 new\cf3  \cf2 int\cf5 [\cf14 COUNT\cf5 ]\cf9 ;\cf0 \
+\cf3 	    	\cf2 for\cf5 (\cf2 int\cf3  \cf13 i\cf3  \cf9 =\cf3  \cf15 0\cf9 ;\cf3  \cf14 i\cf9 <\cf14 COUNT\cf9 ;\cf14 i\cf9 ++\cf5 )\cf3  \cf5 \{\cf0 \
+\cf3 	    		\cf0 \
+\cf3 	    		\cf2 int\cf3  \cf13 j\cf3  \cf9 =\cf3  \cf14 m\cf9 %\cf15 10\cf9 ;\cf0 \
+\cf3 	    		\cf14 m\cf9 =\cf14 m\cf9 /\cf15 10\cf9 ;\cf0 \
+\cf3 	    		\cf14 array\cf5 [\cf14 i\cf5 ]\cf9 =\cf14 j\cf9 ;\cf0 \
+\cf3 	    	\cf5 \}\cf0 \
+\cf3 	    	\cf2 for\cf5 (\cf2 int\cf3  \cf13 s\cf3  \cf9 =\cf3  \cf15 0\cf9 ;\cf14 s\cf9 <\cf14 COUNT\cf9 ;\cf14 s\cf9 ++\cf5 )\cf3  \cf5 \{\cf0 \
+\cf3 	    		\cf4 System\cf9 .
+\f1\i\b \cf10 out
+\f0\i0\b0 \cf9 .\cf11 print\cf5 (\cf14 array\cf5 [\cf14 s\cf5 ])\cf9 ;\cf0 \
+\cf3 	    	\cf5 \}\cf0 \
+\cf3 	    	\
+//PALINDROME NO.\
+\cf2 package\cf3  java101\cf9 ;\cf0 \
+\
+\cf2 import\cf3  java\cf9 .\cf3 util\cf9 .\cf3 Scanner\cf9 ;\cf0 \
+\
+\
+\cf2 public\cf3  \cf2 class\cf3  \cf4 java_code\cf3  \cf5 \{\cf0 \
+\cf3 		\cf0 \
+\
+\cf3 		\cf2 public\cf3  \cf2 static\cf3  \cf2 void\cf3  \cf7 main\cf5 (\cf4 String\cf5 []\cf3  \cf8 args\cf5 )\cf3  \cf5 \{\cf0 \
+\cf3 			\cf6 //input array\cf0 \
+\cf3 	    	\cf4 System\cf9 .
+\f1\i\b \cf10 out
+\f0\i0\b0 \cf9 .\cf11 println\cf5 (\cf12 "ENTER THE NO.: "\cf5 )\cf9 ;\cf0 \
+\cf3 	    	\cf6 //REVERSE A NO.\cf0 \
+\cf3 	    	\cf4 Scanner\cf3  \cf13 \ul input\cf3 \ulnone  \cf9 =\cf3  \cf2 new\cf3  \cf11 Scanner\cf5 (\cf4 System\cf9 .
+\f1\i\b \cf10 in
+\f0\i0\b0 \cf5 )\cf9 ;\cf0 \
+\cf3 	    	\cf2 int\cf3  \cf13 COUNT\cf3  \cf9 =\cf3  \cf15 0\cf9 ,\cf13 n\cf9 ;\cf0 \
+\cf3 	    	\cf14 n\cf3  \cf9 =\cf3  \cf14 input\cf9 .\cf11 nextInt\cf5 ()\cf9 ;\cf0 \
+\cf3 	    	\cf2 int\cf3  \cf13 m\cf3  \cf9 =\cf3  \cf14 n\cf9 ;\cf0 \
+\cf3 	    	\cf2 int\cf3  \cf13 s\cf3  \cf9 =\cf3  \cf14 n\cf9 ;\cf0 \
+\cf3 	    	\cf2 while\cf5 (\cf14 n\cf9 !=\cf15 0\cf5 )\cf3  \cf5 \{\cf0 \
+\cf3 	    		\cf14 n\cf9 =\cf14 n\cf9 /\cf15 10\cf9 ;\cf0 \
+\cf3 	    		\cf14 COUNT\cf9 ++;\cf0 \
+\cf3 	    	\cf5 \}\cf0 \
+\cf3 	    	\cf4 System\cf9 .
+\f1\i\b \cf10 out
+\f0\i0\b0 \cf9 .\cf11 println\cf5 (\cf14 m\cf5 )\cf9 ;\cf0 \
+\cf3 	    	\cf0 \
+\cf3 	    	\cf2 int\cf3  \cf13 num\cf3  \cf9 =\cf3  \cf15 0\cf9 ;\cf0 \
+\cf3 	    	\cf2 for\cf5 (\cf2 int\cf3  \cf13 i\cf3  \cf9 =\cf3  \cf15 0\cf9 ;\cf3  \cf14 i\cf9 <\cf14 COUNT\cf9 ;\cf14 i\cf9 ++\cf5 )\cf3  \cf5 \{\cf0 \
+\cf3 	    		\cf0 \
+\cf3 	    		\cf2 int\cf3  \cf13 j\cf3  \cf9 =\cf3  \cf14 m\cf9 %\cf15 10\cf9 ;\cf0 \
+\cf3 	    		\cf14 num\cf9 +=\cf3  \cf14 j\cf9 *\cf5 (\cf4 Math\cf9 .
+\f2\i \cf16 pow
+\f0\i0 \cf5 (\cf15 10\cf9 ,\cf3  \cf14 COUNT\cf9 -\cf14 i\cf9 -\cf15 1\cf5 ))\cf9 ;\cf0 \
+\cf3 	    		\cf14 m\cf9 =\cf14 m\cf9 /\cf15 10\cf9 ;\cf0 \
+\cf3 	    		\cf0 \
+\cf3 	    	\cf5 \}\cf0 \
+\cf3 	    	\cf0 \
+\cf3 	    	\cf0 \
+\cf3 	    	\cf0 \
+\cf3 	    	\cf0 \
+\cf3 	    		\cf4 System\cf9 .
+\f1\i\b \cf10 out
+\f0\i0\b0 \cf9 .\cf11 println\cf5 (\cf14 num\cf5 )\cf9 ;\cf0 \
+\cf3 	    		\cf0 \
+\cf3 	    		\cf2 if\cf5 (\cf14 s\cf9 ==\cf14 num\cf5 )\cf3  \cf5 \{\cf0 \
+\cf3 	    			\cf4 System\cf9 .
+\f1\i\b \cf10 out
+\f0\i0\b0 \cf9 .\cf11 println\cf5 (\cf12 "NUMBER IS PALINDROME "\cf5 )\cf9 ;\cf0 \
+\cf3 	    		\cf5 \}\cf0 \
+\cf3 	    		\cf2 else\cf3  \cf5 \{\cf0 \
+\cf3 	    			\cf4 System\cf9 .
+\f1\i\b \cf10 out
+\f0\i0\b0 \cf9 .\cf11 println\cf5 (\cf12 "NUMBER IS NOT PALINDROME"\cf5 )\cf9 ;\cf0 \
+\cf3 	    		\cf5 \}\cf0 \
+\cf3 	    \cf0 \
+\cf5 \}\cf0 \
+\cf5 \}\cf0 \
+\pard\pardeftab720\partightenfactor0
+\cf6 //PRIME NO.\cf0 \
+\pard\pardeftab720\partightenfactor0
+\cf3 	    	\cf4 Scanner\cf3  \cf13 \ul input\cf3 \ulnone  \cf9 =\cf3  \cf2 new\cf3  \cf11 Scanner\cf5 (\cf4 System\cf9 .
+\f1\i\b \cf10 in
+\f0\i0\b0 \cf5 )\cf9 ;\cf0 \
+\cf3 	    	\cf2 int\cf3  \cf13 COUNT\cf3  \cf9 =\cf3  \cf15 0\cf9 ,\cf13 n\cf9 ;\cf0 \
+\cf3 	    	\cf14 n\cf3  \cf9 =\cf3  \cf14 input\cf9 .\cf11 nextInt\cf5 ()\cf9 ;\cf0 \
+\cf3 	    	\cf2 for\cf5 (\cf2 int\cf3  \cf13 i\cf3  \cf9 =\cf3  \cf15 2\cf9 ;\cf3  \cf14 i\cf9 <=\cf14 n\cf9 /\cf15 2\cf9 ;\cf3  \cf14 i\cf9 ++\cf5 )\cf3  \cf5 \{\cf0 \
+\cf3 	    		\cf2 if\cf5 (\cf14 n\cf9 %\cf14 i\cf9 ==\cf15 0\cf5 )\cf3  \cf5 \{\cf0 \
+\cf3 	    			\cf14 COUNT\cf9 ++;\cf0 \
+\cf3 	    		\cf5 \}\cf0 \
+\cf3 	    	\cf5 \}\cf0 \
+\cf3 	    	\cf2 if\cf5 (\cf14 COUNT\cf9 !=\cf15 0\cf5 )\cf3  \cf5 \{\cf0 \
+\cf3     			\cf4 System\cf9 .
+\f1\i\b \cf10 out
+\f0\i0\b0 \cf9 .\cf11 println\cf5 (\cf12 "NO. IS NOT PRIME"\cf5 )\cf9 ;\cf0 \
+\cf3     			\cf0 \
+\cf3     		\cf5 \}\cf0 \
+\cf3     		\cf2 else\cf3  \cf5 \{\cf0 \
+\cf3     			\cf4 System\cf9 .
+\f1\i\b \cf10 out
+\f0\i0\b0 \cf9 .\cf11 println\cf5 (\cf12 "NO. IS PRIME"\cf5 )\cf9 ;\cf0 \
+\cf3     		\cf5 \}\cf0 \
+//PYRAMID\
+		\cf4 System\cf9 .
+\f1\i\b \cf10 out
+\f0\i0\b0 \cf9 .\cf11 println\cf5 (\cf12 "ENTER A NO."\cf5 )\cf9 ;\cf0 \
+\cf3 		\cf4 Scanner\cf3  \cf13 \ul input\cf3 \ulnone  \cf9 =\cf3  \cf2 new\cf3  \cf11 Scanner\cf5 (\cf4 System\cf9 .
+\f1\i\b \cf10 in
+\f0\i0\b0 \cf5 )\cf9 ;\cf0 \
+\cf3 		\cf2 int\cf3  \cf13 n\cf3  \cf9 =\cf3  \cf14 input\cf9 .\cf11 nextInt\cf5 ()\cf9 ;\cf0 \
+\cf3 		\cf0 \
+\cf3 		\cf2 for\cf5 (\cf2 int\cf3  \cf13 i\cf3  \cf9 =\cf3  \cf15 0\cf9 ;\cf3  \cf14 i\cf9 <\cf14 n\cf9 ;\cf3  \cf14 i\cf9 ++\cf3  \cf5 )\cf3  \cf5 \{\cf0 \
+\cf3 			\cf0 \
+\cf3 			\cf2 for\cf5 (\cf2 int\cf3  \cf13 j\cf3  \cf9 =\cf3  \cf15 2\cf9 ;\cf3  \cf14 j\cf9 <=\cf3  \cf14 i\cf9 +\cf15 1\cf9 ;\cf3  \cf14 j\cf9 ++\cf5 )\cf3  \cf5 \{\cf0 \
+\cf3 				\cf4 System\cf9 .
+\f1\i\b \cf10 out
+\f0\i0\b0 \cf9 .\cf11 print\cf5 (\cf12 " "\cf5 )\cf9 ;\cf0 \
+\cf3 				\cf0 \
+\cf3 			\cf5 \}\cf0 \
+\cf3 			\cf0 \
+\cf3 			\cf2 for\cf5 (\cf2 int\cf3  \cf13 m\cf3  \cf9 =\cf3  \cf14 n\cf9 -\cf14 i\cf9 ;\cf3  \cf14 m\cf9 >=\cf15 1\cf9 ;\cf3  \cf14 m\cf9 --\cf5 )\cf3  \cf5 \{\cf0 \
+\cf3 				\cf4 System\cf9 .
+\f1\i\b \cf10 out
+\f0\i0\b0 \cf9 .\cf11 print\cf5 (\cf12 "* "\cf5 )\cf9 ;\cf0 \
+\cf3 			\cf5 \}\cf0 \
+\cf3 			\cf0 \
+\cf3 			\cf2 for\cf5 (\cf2 int\cf3  \cf13 j\cf3  \cf9 =\cf3  \cf15 2\cf9 ;\cf3  \cf14 j\cf9 <=\cf3  \cf14 i\cf9 +\cf15 1\cf9 ;\cf3  \cf14 j\cf9 ++\cf5 )\cf3  \cf5 \{\cf0 \
+\cf3 				\cf4 System\cf9 .
+\f1\i\b \cf10 out
+\f0\i0\b0 \cf9 .\cf11 print\cf5 (\cf12 " "\cf5 )\cf9 ;\cf0 \
+\cf3 				\cf0 \
+\cf3 			\cf5 \}\cf0 \
+\cf3 			\cf0 \
+\cf3 			\cf2 for\cf5 (\cf2 int\cf3  \cf13 j\cf3  \cf9 =\cf3  \cf15 2\cf9 ;\cf3  \cf14 j\cf9 <=\cf3  \cf14 i\cf9 +\cf15 1\cf9 ;\cf3  \cf14 j\cf9 ++\cf5 )\cf3  \cf5 \{\cf0 \
+\cf3 				\cf4 System\cf9 .
+\f1\i\b \cf10 out
+\f0\i0\b0 \cf9 .\cf11 print\cf5 (\cf12 " "\cf5 )\cf9 ;\cf0 \
+\cf3 				\cf0 \
+\cf3 			\cf5 \}\cf0 \
+\cf3 			\cf0 \
+\cf3 			\cf2 for\cf5 (\cf2 int\cf3  \cf13 m\cf3  \cf9 =\cf3  \cf14 n\cf9 -\cf14 i\cf9 ;\cf3  \cf14 m\cf9 >=\cf15 1\cf9 ;\cf3  \cf14 m\cf9 --\cf5 )\cf3  \cf5 \{\cf0 \
+\cf3 				\cf4 System\cf9 .
+\f1\i\b \cf10 out
+\f0\i0\b0 \cf9 .\cf11 print\cf5 (\cf12 "* "\cf5 )\cf9 ;\cf0 \
+\cf3 			\cf5 \}\cf0 \
+\cf3 			\cf4 System\cf9 .
+\f1\i\b \cf10 out
+\f0\i0\b0 \cf9 .\cf11 print\cf5 (\cf12 "\\n"\cf5 )\cf9 ;\cf0 \
+\cf3 			\cf0 \
+\cf3 		\cf5 \}\
+\pard\pardeftab720\partightenfactor0
+\cf17 //\
+//BINARY SEARCH\
+\pard\pardeftab720\partightenfactor0
+\cf2 import\cf3  java\cf9 .\cf3 util\cf9 .\cf3 Scanner\cf9 ;\cf0 \
+\cf2 import\cf3  java\cf9 .\cf3 util\cf9 .\cf3 concurrent\cf9 .\cf3 TimeUnit\cf9 ;\cf0 \
+\cf2 import\cf3  \cf3 \ul java\cf9 \ulc9 .\cf3 \ulc3 util\cf9 \ulc9 .\cf3 \ulc3 ArrayList\cf9 \ulnone ;\cf0 \
+\pard\pardeftab720\partightenfactor0
+\cf2 import\cf3  java\cf9 .\cf3 util\cf9 .\cf3 Arrays\cf9 ;\cf0 \
+\cf2 import\cf3  \cf3 \ul \ulc3 java\cf9 \ulc9 .\cf3 \ulc3 util\cf9 \ulc9 .\cf3 \ulc3 Collections\cf9 \ulnone ;\cf0 \
+\cf2 import\cf3  \cf3 \ul \ulc3 java\cf9 \ulc9 .\cf3 \ulc3 util\cf9 \ulc9 .\cf3 \ulc3 List\cf9 \ulnone ;\cf0 \
+\
+\cf2 public\cf3  \cf2 class\cf3  \cf4 java_code\cf3  \cf5 \{\cf0 \
+\cf3 		\cf2 public\cf3  \cf2 int\cf3  \cf7 binarySearch\cf5 (\cf2 int\cf3  \cf8 arr\cf5 []\cf9 ,\cf2 int\cf3  \cf8 l\cf9 ,\cf2 int\cf3  \cf8 n\cf9 ,\cf2 int\cf3  \cf8 x\cf5 )\cf3  \cf5 \{\cf0 \
+\cf3 			\cf2 if\cf5 (\cf8 n\cf9 >=\cf8 l\cf5 )\cf3  \cf5 \{\cf0 \
+\cf3 			\cf2 int\cf3  \cf13 mid\cf3  \cf9 =\cf3  \cf8 l\cf3  \cf9 +\cf3  \cf5 (\cf8 n\cf9 -\cf8 l\cf5 )\cf9 /\cf15 2\cf9 ;\cf0 \
+\cf3 			\cf0 \
+\cf3 			\cf2 if\cf5 (\cf8 arr\cf5 [\cf14 mid\cf9 -\cf15 1\cf5 ]\cf9 ==\cf8 x\cf5 )\cf0 \
+\cf3 			\cf2 return\cf3  \cf14 mid\cf9 -\cf15 1\cf9 ;\cf0 \
+\cf3 			\cf0 \
+\cf3 			\cf2 if\cf5 (\cf8 arr\cf5 [\cf14 mid\cf9 -\cf15 1\cf5 ]\cf9 >\cf8 x\cf5 )\cf0 \
+\cf3 			\cf2 return\cf3  \cf11 binarySearch\cf5 (\cf8 arr\cf9 ,\cf15 0\cf9 ,\cf14 mid\cf9 -\cf15 1\cf9 ,\cf8 x\cf5 )\cf9 ;\cf0 \
+\cf3 			\cf2 if\cf5 (\cf8 arr\cf5 [\cf14 mid\cf9 -\cf15 1\cf5 ]\cf9 <\cf8 x\cf5 )\cf0 \
+\cf3 			\cf2 return\cf3  \cf11 binarySearch\cf5 (\cf8 arr\cf9 ,\cf14 mid\cf9 +\cf15 1\cf9 ,\cf8 n\cf9 ,\cf8 x\cf5 )\cf9 ;\cf0 \
+\cf3 			\cf5 \}\cf0 \
+\cf3 			\cf2 return\cf3  \cf9 -\cf15 1\cf9 ;\cf0 \
+\cf5 \}\cf0 \
+\
+\cf3 		\cf2 public\cf3  \cf2 static\cf3  \cf2 void\cf3  \cf7 main\cf5 (\cf4 String\cf5 []\cf3  \cf8 args\cf5 )\cf3  \cf2 throws\cf3  \cf4 InterruptedException\cf3  \cf5 \{\cf0 \
+\cf3 			\cf0 \
+\cf3 			\cf4 System\cf9 .
+\f1\i\b \cf10 out
+\f0\i0\b0 \cf9 .\cf11 println\cf5 (\cf12 "ENTER THE NO. OF TERMS:"\cf5 )\cf9 ;\cf0 \
+\cf3 			\cf4 Scanner\cf3  \cf13 \ul \ulc13 input\cf3 \ulnone  \cf9 =\cf3  \cf2 new\cf3  \cf11 Scanner\cf5 (\cf4 System\cf9 .
+\f1\i\b \cf10 in
+\f0\i0\b0 \cf5 )\cf9 ;\cf0 \
+\pard\pardeftab720\partightenfactor0
+\cf3 			\cf2 int\cf3  \cf13 n\cf3  \cf9 =\cf3  \cf14 input\cf9 .\cf11 nextInt\cf5 ()\cf9 ;\cf0 \
+\cf3 			\cf2 int\cf3  \cf13 arr\cf5 []\cf3  \cf9 =\cf3  \cf2 new\cf3  \cf2 int\cf5 [\cf14 n\cf5 ]\cf9 ;\cf0 \
+\cf3 			\cf4 System\cf9 .
+\f1\i\b \cf10 out
+\f0\i0\b0 \cf9 .\cf11 println\cf5 (\cf12 "ENTER THE ELEMENTS:"\cf5 )\cf9 ;\cf0 \
+\cf3 			\cf2 for\cf5 (\cf2 int\cf3  \cf13 i\cf9 =\cf15 0\cf9 ;\cf3  \cf14 i\cf9 <\cf14 n\cf9 ;\cf3  \cf14 i\cf9 ++\cf5 )\cf3  \cf5 \{\cf0 \
+\cf3 				\cf14 arr\cf5 [\cf14 i\cf5 ]\cf9 =\cf14 input\cf9 .\cf11 nextInt\cf5 ()\cf9 ;\cf0 \
+\cf3 			\cf5 \}\cf0 \
+\cf3 			\cf4 Arrays\cf9 .
+\f2\i \cf16 sort
+\f0\i0 \cf5 (\cf14 arr\cf5 )\cf9 ;\cf0 \
+\cf3 			\cf2 for\cf5 (\cf2 int\cf3  \cf13 j\cf3  \cf9 =\cf3  \cf15 0\cf9 ;\cf3  \cf14 j\cf9 <\cf14 n\cf9 ;\cf14 j\cf9 ++\cf5 )\cf3  \cf5 \{\cf0 \
+\cf3 				\cf4 System\cf9 .
+\f1\i\b \cf10 out
+\f0\i0\b0 \cf9 .\cf11 println\cf5 (\cf14 arr\cf5 [\cf14 j\cf5 ])\cf9 ;\cf0 \
+\cf3 			\cf5 \}\cf0 \
+\cf3 			\cf4 System\cf9 .
+\f1\i\b \cf10 out
+\f0\i0\b0 \cf9 .\cf11 println\cf5 (\cf12 "ENTER THE ELEMENT TO BE SEARCHED"\cf5 )\cf9 ;\cf0 \
+\cf3 			\cf2 int\cf3  \cf13 x\cf3  \cf9 =\cf3  \cf14 input\cf9 .\cf11 nextInt\cf5 ()\cf9 ;\cf0 \
+\cf3 			\cf2 long\cf3  \cf13 startTime\cf3  \cf9 =\cf3  \cf4 System\cf9 .
+\f2\i \cf16 nanoTime
+\f0\i0 \cf5 ()\cf9 ;\cf0 \
+\cf3 			\cf4 java_code\cf3  \cf13 obj\cf3  \cf9 =\cf3  \cf2 new\cf3  \cf11 java_code\cf5 ()\cf9 ;\cf0 \
+\cf3 			\cf2 int\cf3  \cf13 result\cf3  \cf9 =\cf3  \cf14 obj\cf9 .\cf11 binarySearch\cf5 (\cf14 arr\cf9 ,\cf3  \cf15 0\cf9 ,\cf3  \cf14 n\cf9 ,\cf3  \cf14 x\cf5 )\cf9 ;\cf0 \
+\cf3 			\cf4 System\cf9 .
+\f1\i\b \cf10 out
+\f0\i0\b0 \cf9 .\cf11 println\cf5 (\cf12 "INDEX OF THE RESULT IS: "\cf9 +\cf14 result\cf5 )\cf9 ;\cf0 \
+\cf3 			\cf0 \
+\cf3 			\cf0 \
+\
+\cf3 			\cf6 /* ... the code being measured starts ... */\cf0 \
+\
+\cf3 			\cf6 // sleep for 5 seconds\cf0 \
+\cf3 			
+\f2\i \cf18 TimeUnit
+\f0\i0 \cf9 .
+\f1\i\b \cf10 SECONDS
+\f0\i0\b0 \cf9 .\cf11 sleep\cf5 (\cf15 5\cf5 )\cf9 ;\cf0 \
+\
+\cf3 			\cf6 /* ... the code being measured ends ... */\cf0 \
+\
+\cf3 			\cf2 long\cf3  \cf13 endTime\cf3  \cf9 =\cf3  \cf4 System\cf9 .
+\f2\i \cf16 nanoTime
+\f0\i0 \cf5 ()\cf9 ;\cf0 \
+\
+\cf3 			\cf6 // get difference of two nanoTime values\cf0 \
+\cf3 			\cf2 long\cf3  \cf13 timeElapsed\cf3  \cf9 =\cf3  \cf14 endTime\cf3  \cf9 -\cf3  \cf14 startTime\cf9 ;\cf0 \
+\
+\cf3 			\cf4 System\cf9 .
+\f1\i\b \cf10 out
+\f0\i0\b0 \cf9 .\cf11 println\cf5 (\cf12 "Execution time in nanoseconds  : "\cf3  \cf9 +\cf3  \cf14 timeElapsed\cf5 )\cf9 ;\cf0 \
+\cf3 			\cf4 System\cf9 .
+\f1\i\b \cf10 out
+\f0\i0\b0 \cf9 .\cf11 println\cf5 (\cf12 "Execution time in milliseconds : "\cf3  \cf9 +\cf0 \
+\cf3 					\cf14 timeElapsed\cf3  \cf9 /\cf3  \cf15 1000000\cf5 )\cf9 ;\cf0 \
+\cf3 		\cf5 \}\cf0 \
+\cf5 \}\cf0 \
+//SELECTION SORT\
+\pard\pardeftab720\partightenfactor0
+\cf19 public\cf20  \cf19 class\cf20  \cf21 java_code\cf20  \cf22 \{\cf0 \
+\pard\pardeftab720\partightenfactor0
+\cf20 		\cf0 \
+\cf20 	\cf19 public\cf20  \cf19 static\cf20  \cf19 void\cf20  \cf23 selectionSort\cf22 (\cf19 int\cf20  \cf24 array\cf22 []\cf25 ,\cf19 int\cf20  \cf24 n\cf20  \cf22 )\cf20  \cf22 \{\cf0 \
+\cf20 		\cf19 for\cf22 (\cf19 int\cf20  \cf26 j\cf20  \cf25 =\cf20  \cf27 0\cf25 ;\cf20  \cf28 j\cf25 <\cf24 n\cf25 -\cf27 1\cf25 ;\cf20  \cf28 j\cf25 ++\cf22 )\cf20  \cf22 \{\cf0 \
+\cf20 			\cf19 int\cf20  \cf26 min_index\cf20  \cf25 =\cf20  \cf28 j\cf25 ;\cf0 \
+\cf20 			\cf0 \
+\cf20 			\cf19 for\cf22 (\cf19 int\cf20  \cf26 k\cf25 =\cf28 j\cf25 +\cf27 1\cf25 ;\cf28 k\cf25 <\cf24 n\cf25 ;\cf28 k\cf25 ++\cf22 )\cf20  \cf22 \{\cf0 \
+\cf20 				\cf19 if\cf22 (\cf24 array\cf22 [\cf28 k\cf22 ]\cf25 <\cf24 array\cf22 [\cf28 min_index\cf22 ])\cf0 \
+\cf20 					\cf28 min_index\cf25 =\cf28 k\cf25 ;\cf0 \
+\cf20 			\cf22 \}\cf0 \
+\cf20 			\cf19 int\cf20  \cf26 temp\cf20  \cf25 =\cf20  \cf24 array\cf22 [\cf28 min_index\cf22 ]\cf25 ;\cf0 \
+\cf20 			\cf24 array\cf22 [\cf28 min_index\cf22 ]\cf25 =\cf24 array\cf22 [\cf28 j\cf22 ]\cf25 ;\cf0 \
+\cf20 			\cf24 array\cf22 [\cf28 j\cf22 ]\cf25 =\cf28 temp\cf25 ;\cf0 \
+\cf20 		\cf22 \}\cf0 \
+\cf20 		\cf19 for\cf22 (\cf19 int\cf20  \cf26 m\cf20  \cf25 =\cf27 0\cf25 ;\cf28 m\cf25 <\cf24 n\cf25 ;\cf28 m\cf25 ++\cf22 )\cf20  \cf22 \{\cf0 \
+\cf20 			\cf21 System\cf25 .
+\f1\i\b \cf29 out
+\f0\i0\b0 \cf25 .\cf30 print\cf22 (\cf24 array\cf22 [\cf28 m\cf22 ]\cf25 +\cf31 " "\cf22 )\cf25 ;\cf0 \
+\cf20 		\cf22 \}\cf25 ;\cf0 \
+\cf20 	\cf22 \}\cf0 \
+\cf20 	\cf0 \
+\cf20 	\cf0 \
+\cf20 		\cf19 public\cf20  \cf19 static\cf20  \cf19 void\cf20  \cf23 main\cf22 (\cf21 String\cf22 []\cf20  \cf24 args\cf22 )\{\cf0 \
+\
+\cf20 			\cf0 \
+\cf20 			\cf0 \
+\cf20 			\cf21 System\cf25 .
+\f1\i\b \cf29 out
+\f0\i0\b0 \cf25 .\cf30 println\cf22 (\cf31 "Enter the no. of elements in the array"\cf22 )\cf25 ;\cf0 \
+\cf20 			\cf21 Scanner\cf20  \cf26 \ul \ulc26 input\cf20 \ulnone  \cf25 =\cf20  \cf19 new\cf20  \cf30 Scanner\cf22 (\cf21 System\cf25 .
+\f1\i\b \cf29 in
+\f0\i0\b0 \cf22 )\cf25 ;\cf0 \
+\cf20 			\cf19 int\cf20  \cf26 n\cf20  \cf25 =\cf20  \cf28 input\cf25 .\cf30 nextInt\cf22 ()\cf25 ;\cf0 \
+\cf20 			\cf21 System\cf25 .
+\f1\i\b \cf29 out
+\f0\i0\b0 \cf25 .\cf30 println\cf22 (\cf31 "Enter the elements in the array"\cf22 )\cf25 ;\cf0 \
+\cf20 			\cf19 int\cf20  \cf26 array\cf22 []\cf20  \cf25 =\cf20  \cf19 new\cf20  \cf19 int\cf22 [\cf28 n\cf22 ]\cf25 ;\cf0 \
+\cf20 			\cf19 for\cf22 (\cf19 int\cf20  \cf26 i\cf20  \cf25 =\cf20  \cf27 0\cf25 ;\cf20  \cf28 i\cf25 <\cf28 n\cf25 ;\cf20  \cf28 i\cf25 ++\cf20  \cf22 )\cf20  \cf22 \{\cf0 \
+\cf20 				\cf28 array\cf22 [\cf28 i\cf22 ]\cf25 =\cf28 input\cf25 .\cf30 nextInt\cf22 ()\cf25 ;\cf0 \
+\cf20 			\cf22 \}\cf0 \
+\cf20 			
+\f2\i \cf32 selectionSort
+\f0\i0 \cf22 (\cf28 array\cf25 ,\cf28 n\cf22 )\cf25 ;\cf0 \
+\cf20 			\cf0 \
+\cf20 			\cf22 \}\cf0 \
+\cf20 			\cf0 \
+\cf20 		\cf22 \}\cf0 \
+//BUBBLE SORT\
+\pard\pardeftab720\partightenfactor0
+\cf19 public\cf20  \cf19 class\cf20  \cf21 java_code\cf20  \cf22 \{\cf0 \
+\pard\pardeftab720\partightenfactor0
+\cf20 		\cf0 \
+\cf20 	\cf19 public\cf20  \cf19 static\cf20  \cf19 void\cf20  \cf23 bubbleSort\cf22 (\cf19 int\cf20  \cf24 array\cf22 []\cf25 ,\cf19 int\cf20  \cf24 n\cf20  \cf22 )\cf20  \cf22 \{\cf0 \
+\
+\cf20 		\cf19 for\cf22 (\cf19 int\cf20  \cf26 i\cf20  \cf25 =\cf27 0\cf25 ;\cf28 i\cf25 <\cf24 n\cf25 -\cf27 1\cf25 ;\cf28 i\cf25 ++\cf22 )\cf20  \cf22 \{\cf0 \
+\cf20 			\cf19 for\cf22 (\cf19 int\cf20  \cf26 j\cf25 =\cf27 0\cf25 ;\cf28 j\cf25 <\cf24 n\cf25 -\cf28 i\cf25 -\cf27 1\cf25 ;\cf28 j\cf25 ++\cf22 )\cf20  \cf22 \{\cf33 //instead of n-i-1 even n-1 will do\cf0 \
+\cf20 				\cf19 if\cf22 (\cf24 array\cf22 [\cf28 j\cf22 ]\cf25 >\cf24 array\cf22 [\cf28 j\cf25 +\cf27 1\cf22 ])\cf0 \
+\cf20 				\cf22 \{\cf0 \
+\cf20 					\cf19 int\cf20  \cf26 temp\cf20  \cf25 =\cf20  \cf24 array\cf22 [\cf28 j\cf22 ]\cf25 ;\cf0 \
+\cf20 					\cf24 array\cf22 [\cf28 j\cf22 ]\cf25 =\cf24 array\cf22 [\cf28 j\cf25 +\cf27 1\cf22 ]\cf25 ;\cf0 \
+\cf20 					\cf24 array\cf22 [\cf28 j\cf25 +\cf27 1\cf22 ]\cf25 =\cf28 temp\cf25 ;\cf0 \
+\cf20 				\cf22 \}\cf0 \
+\cf20 				\cf0 \
+\cf20 			\cf22 \}\cf0 \
+\cf20 		\cf22 \}\cf0 \
+\cf20 		\cf0 \
+\cf20 		\cf19 for\cf22 (\cf19 int\cf20  \cf26 m\cf20  \cf25 =\cf27 0\cf25 ;\cf28 m\cf25 <\cf24 n\cf25 ;\cf28 m\cf25 ++\cf22 )\cf20  \cf22 \{\cf0 \
+\cf20 			\cf21 System\cf25 .
+\f1\i\b \cf29 out
+\f0\i0\b0 \cf25 .\cf30 print\cf22 (\cf24 array\cf22 [\cf28 m\cf22 ]\cf25 +\cf31 " "\cf22 )\cf25 ;\cf0 \
+\cf20 		\cf22 \}\cf25 ;\cf0 \
+\cf20 	\cf22 \}\cf0 \
+\cf20 	\cf0 \
+\cf20 	\cf0 \
+\cf20 		\cf19 public\cf20  \cf19 static\cf20  \cf19 void\cf20  \cf23 main\cf22 (\cf21 String\cf22 []\cf20  \cf24 args\cf22 )\{\cf0 \
+\
+\cf20 			\cf0 \
+\cf20 			\cf0 \
+\cf20 			\cf21 System\cf25 .
+\f1\i\b \cf29 out
+\f0\i0\b0 \cf25 .\cf30 println\cf22 (\cf31 "Enter the no. of elements in the array"\cf22 )\cf25 ;\cf0 \
+\cf20 			\cf21 Scanner\cf20  \cf26 \ul \ulc26 input\cf20 \ulnone  \cf25 =\cf20  \cf19 new\cf20  \cf30 Scanner\cf22 (\cf21 System\cf25 .
+\f1\i\b \cf29 in
+\f0\i0\b0 \cf22 )\cf25 ;\cf0 \
+\cf20 			\cf19 int\cf20  \cf26 n\cf20  \cf25 =\cf20  \cf28 input\cf25 .\cf30 nextInt\cf22 ()\cf25 ;\cf0 \
+\cf20 			\cf21 System\cf25 .
+\f1\i\b \cf29 out
+\f0\i0\b0 \cf25 .\cf30 println\cf22 (\cf31 "Enter the elements in the array"\cf22 )\cf25 ;\cf0 \
+\cf20 			\cf19 int\cf20  \cf26 array\cf22 []\cf20  \cf25 =\cf20  \cf19 new\cf20  \cf19 int\cf22 [\cf28 n\cf22 ]\cf25 ;\cf0 \
+\cf20 			\cf19 for\cf22 (\cf19 int\cf20  \cf26 i\cf20  \cf25 =\cf20  \cf27 0\cf25 ;\cf20  \cf28 i\cf25 <\cf28 n\cf25 ;\cf20  \cf28 i\cf25 ++\cf20  \cf22 )\cf20  \cf22 \{\cf0 \
+\cf20 				\cf28 array\cf22 [\cf28 i\cf22 ]\cf25 =\cf28 input\cf25 .\cf30 nextInt\cf22 ()\cf25 ;\cf0 \
+\cf20 			\cf22 \}\cf0 \
+\cf20 			
+\f2\i \cf32 bubbleSort
+\f0\i0 \cf22 (\cf28 array\cf25 ,\cf28 n\cf22 )\cf25 ;\cf0 \
+\cf20 			\cf0 \
+\cf20 			\cf22 \}\cf0 \
+\cf20 			\cf0 \
+\cf20 		\cf22 \}\cf0 \
+\
+}
